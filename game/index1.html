@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body onclick="playMusic()">
+    <audio id="bg-music" src="./assets/henry-purcell-funeral-march-for-queen-mary-114493.mp3" loop></audio>
+    <div id="start-screen">
+        
+        <h1 class="welcome">Welcome to  forest</h1>
+        <p class="trouble">You are in trouble</p>
+        <ul>
+            
+<li>Guess the hidden word by typing letters.</li>
+<li>You can only make 6 mistakes before you lose.</li>
+<li>All the words are connected with social problems</li>
+<li>In case that you are lose start wondering about yourself!</li>
+        </ul>
+        <button id="start-button">Start Game</button>
+      
+    </div>
+
+    <div id="game-screen"  style="display: none;" >
+        <h1>  Hanged or Proud?</h1>
+        <p>   Are you still wondering???</p>
+       
+        <div class="game-container">
+            <svg height="250" width="200" class="figure-container">
+                <!-- Rod -->
+                <line x1="60" y1="20" x2="140" y2="20" />
+                <line x1="140" y1="20" x2="140" y2="50" />
+                <line x1="60" y1="20" x2="60" y2="230" />
+                <line x1="20" y1="230" x2="100" y2="230" />
+
+                <!-- Head -->
+                <circle cx="140" cy="70" r="20" class="figure-part"/>
+                <!-- Body -->
+                <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
+                <!-- Arms -->
+                <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
+                <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+                <!-- Legs -->
+                <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
+                <line x1="140" y1="150" x2="160" y2="180" class="figure-part" />
+            </svg>
+            <div class="wrong-letters-container">
+                <img src="./assets/man-with-a-light-lamp.png" alt="">
+                <div id="wrong-letters"></div>
+            </div>
+            <div class="word" id="word"></div>
+        </div>
+        <!-- Container for final message -->
+        <div class="popup-container" id="popup-container">
+            <div class="popup">
+                <h2 id="final-message"></h2>
+                <button id="play-button">Play Again</button>
+            </div>
+        </div>
+
+        <!-- Notification -->
+        <div class="notification-container" id="notification-container">
+            <p>Hey, not again that letter!!!!</p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

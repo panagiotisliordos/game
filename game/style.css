@@ -1,0 +1,178 @@
+*{
+    box-sizing: border-box;
+    
+}
+#start-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .welcome{
+    margin: 140px 0 0;
+    color: #666868;
+    text-shadow: 16px 6px 26px #992020;
+    font-size: 38px;
+}
+  .trouble{
+    
+    color: #6b6e6e;
+    text-shadow: 17px 12px 8px #992020;
+    font-size: 28px;
+}
+  #start-button {
+    margin-top: 20px;
+ 
+    background-color: #c70d0d;
+    color: #dfe9e9;
+}
+ul{
+    font-size: 20px;
+    font-style: italic;
+}
+body{ 
+    background-image: url(./assets/3d-render-landscape-foggy-forest.jpg) ;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+   color: #923e3e;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1{
+    margin: 140px 0 0;
+    color: #edf3f3;
+    text-shadow: 16px 6px 26px #992020;
+    font-size: 38px;
+}
+img{
+    width: 80px;
+    height: auto;
+}
+p{
+    
+    color: #f6fafa;
+    text-shadow: 17px 12px 8px #992020;
+    font-size: 28px;
+}
+
+.game-container{
+    padding: 20px 30px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    width: 450px;
+}
+
+.figure-container{
+    fill: transparent;
+    stroke: #b7c4c3;
+    stroke-width: 10px;
+    stroke-linecap: round;
+    
+}
+
+
+
+
+
+.wrong-letters-container{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #c70d0d;
+    
+}
+
+.wrong-letters-container p{
+    margin: 0 0 5px;
+}
+
+.wrong-letters-container span{
+    font-size: 34px;
+}
+
+.word{
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.letter{
+    border-bottom: 3px solid #1a1819;
+    display: inline-flex;
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3px;
+    height: 50px;
+    width: 20px;
+}
+
+.popup-container{
+    background-color: rgba(212, 128, 128, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup{
+    background-color: #837f81;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px 3px rgba(143, 131, 131, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.popup button{
+    cursor: pointer;
+    background-color: #0f0101;
+    color: #dfe9e9;
+    border: 0;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+
+.popup button:active{
+    transform: scale(0.98);
+}
+
+.popup button:focus{
+    outline: 0;
+}
+
+.notification-container{
+    background-color:gba(0,0,0,0.3);
+    border-radius: 10px 10px 0 0;
+    padding: 15px 20px;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.notification-container p{
+    margin: 0;
+}
+
+.notification-container.show{
+    transform: translateY(-50px);
+}
