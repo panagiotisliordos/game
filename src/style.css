@@ -16,7 +16,7 @@
   
   .welcome{
     margin: 140px 0 0;
-    color: #a7aeae;
+    color: #eff3f3;
     text-shadow: 16px 6px 26px #da1e1e;
     font-size: 38px;
 }
@@ -79,7 +79,7 @@ background-repeat: no-repeat;
 
 h1{
     margin: 140px 0 0;
-    color: #edf3f3;
+    color: #f0f9f9;
     text-shadow: 16px 6px 26px #992020;
     font-size: 48px;
     text-align: center;
@@ -90,8 +90,13 @@ img{
 }
 p{
     
-    color: #d4b1bf;
+    color: #a40505;
     text-shadow: 7px 16px 8px  #992020;
+    font-size: 28px;
+}
+.hey{
+    color: #b5a5a5;
+  
     font-size: 28px;
 }
 .still{
