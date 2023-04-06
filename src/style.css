@@ -61,7 +61,7 @@ body{
 #start-screen{
     width: 100%;
     height: 100%;
-    background-image: url(./assets/3d-render-grunge-room-interior-with-smoky-atmosphere.jpg);
+    background-image: url('../assets/3d-render-grunge-room-interior-with-smoky-atmosphere.jpg');
     background-position: center;
     background-size: 100%;
 background-repeat: no-repeat;
@@ -70,7 +70,7 @@ background-repeat: no-repeat;
 #game-screen{
     width: 100%;
     height: 100%;
-    background-image: url(./assets/3d-render-landscape-foggy-forest.jpg);
+    background-image: url('../assets/3d-render-landscape-foggy-forest.jpg');
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -90,7 +90,7 @@ img{
 }
 p{
     
-    color: #4c4749;
+    color: #d4b1bf;
     text-shadow: 7px 16px 8px  #992020;
     font-size: 28px;
 }
