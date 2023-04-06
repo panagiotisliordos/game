@@ -7,7 +7,7 @@ const finalMessage = document.getElementById('final-message');
 
 const figureParts= document.querySelectorAll(".figure-part");
 
-const words = ["fascism", "patriarchy", "sexism", "racism", "omophobia"];
+const words = ["fascism", "patriarchy", "sexism", "racism", "omophobia","Gentrification "];
 
 let selectedWord = words[Math.floor(Math.random() * words.length)];
 
