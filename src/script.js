@@ -99,7 +99,7 @@ function updateWrongLetterE1() {
   }
   else {
     // Play wrong letter sound effect
-    const wrongSound = new Audio('../assets/evil-shreik-45560.mp3');
+    const wrongSound = new Audio('./assets/evil-shreik-45560.mp3');
     wrongSound.play();
 }
 }
