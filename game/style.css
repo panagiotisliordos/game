@@ -8,50 +8,81 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    
+    
   }
+  
+
+  
   .welcome{
     margin: 140px 0 0;
-    color: #666868;
-    text-shadow: 16px 6px 26px #992020;
+    color: #a7aeae;
+    text-shadow: 16px 6px 26px #da1e1e;
     font-size: 38px;
 }
   .trouble{
     
-    color: #6b6e6e;
-    text-shadow: 17px 12px 8px #992020;
+    color: #a5adad;
+    text-shadow: 17px 12px 8px #af3c3c;
     font-size: 28px;
 }
   #start-button {
     margin-top: 20px;
- 
+    font-size: 20px;
     background-color: #c70d0d;
     color: #dfe9e9;
+    border-radius: 30%;
 }
 ul{
     font-size: 20px;
     font-style: italic;
+    color: rgb(246, 228, 228);
+    text-shadow: 7px 1px 8px #af3c3c;
 }
+
+  
 body{ 
-    background-image: url(./assets/3d-render-landscape-foggy-forest.jpg) ;
+   /* background-image: url(./assets/3d-render-landscape-foggy-forest.jpg);
     background-position: center;
     background-size: 100%;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;*/
    color: #923e3e;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     margin: 0;
     overflow: hidden;
+    z-index: 0;
 }
+
+#start-screen{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/3d-render-grunge-room-interior-with-smoky-atmosphere.jpg);
+    background-position: center;
+    background-size: 100%;
+background-repeat: no-repeat;
+}
+
+#game-screen{
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/3d-render-landscape-foggy-forest.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 
 h1{
     margin: 140px 0 0;
     color: #edf3f3;
     text-shadow: 16px 6px 26px #992020;
-    font-size: 38px;
+    font-size: 48px;
+    text-align: center;
 }
 img{
     width: 80px;
@@ -59,11 +90,17 @@ img{
 }
 p{
     
-    color: #f6fafa;
-    text-shadow: 17px 12px 8px #992020;
+    color: #4c4749;
+    text-shadow: 7px 16px 8px  #992020;
     font-size: 28px;
 }
+.still{
 
+ color: #403838;
+    text-shadow: 7px 12px 8px #992020;
+    font-size: 33px;
+    text-align: center;
+}
 .game-container{
     padding: 20px 30px;
     position: relative;
@@ -74,10 +111,10 @@ p{
 
 .figure-container{
     fill: transparent;
-    stroke: #b7c4c3;
-    stroke-width: 10px;
+    stroke: #4b5150;
+    stroke-width: 8px;
     stroke-linecap: round;
-    
+   
 }
 
 
@@ -112,9 +149,10 @@ p{
 }
 
 .letter{
-    border-bottom: 3px solid #1a1819;
+    border-bottom: 4px solid #1a1819;
     display: inline-flex;
-    font-size: 25px;
+    font-size: 35px;
+    font-style: oblique;
     align-items: center;
     justify-content: center;
     margin: 0 3px;
@@ -132,14 +170,25 @@ p{
     display: none;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 }
 
 .popup{
-    background-color: #837f81;
-    border-radius: 5px;
+   background-color: #aca7a9;
+   /* border-radius: 5px;*/
     box-shadow: 0 15px 10px 3px rgba(143, 131, 131, 0.1);
     padding: 20px;
     text-align: center;
+    border-radius: 40%;
+   /* width: 80%;
+    height: 80%;*/
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    position: fixed;
+    top: 280px;
+    right:240px;
+
 }
 
 .popup button{
@@ -150,6 +199,7 @@ p{
     margin-top: 20px;
     padding: 12px 20px;
     font-size: 16px;
+    border-radius: 30%;
 }
 
 .popup button:active{
