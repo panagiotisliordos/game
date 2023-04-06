@@ -64,7 +64,7 @@ function displayWord() {
   const innerWord = wordE1.innerText.replace(/\n/g, "");
   //  if(innerWord === selectedWord) compares the innerWord variable (the player's guess with newline characters removed) to the selectedWord variable (the actual word the player is trying to guess).
   if (innerWord === selectedWord) {
-    finalMessage.innerText = "I think you was lucky!!";
+    finalMessage.innerText = "I think you were lucky!!";
     popup.style.display = "flex";
   }
 }
