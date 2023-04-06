@@ -91,7 +91,7 @@ img{
 p{
     
     color: #a40505;
-    text-shadow: 7px 16px 8px  #992020;
+    text-shadow: 7px 6px 8px  #992020;
     font-size: 28px;
 }
 .hey{
@@ -101,9 +101,9 @@ p{
 }
 .still{
 
- color: #403838;
+ color: #f2e0e0;
     text-shadow: 7px 12px 8px #992020;
-    font-size: 33px;
+    font-size: 36px;
     text-align: center;
 }
 .game-container{
@@ -184,7 +184,7 @@ p{
     box-shadow: 0 15px 10px 3px rgba(143, 131, 131, 0.1);
     padding: 20px;
     text-align: center;
-    border-radius: 40%;
+    border-radius: 50%;
    /* width: 80%;
     height: 80%;*/
     overflow: hidden;
@@ -192,7 +192,7 @@ p{
     height: 200px;
     position: fixed;
     top: 280px;
-    right:240px;
+    right:280px;
 
 }
 
@@ -222,6 +222,8 @@ p{
     position: absolute;
     bottom: -50px;
     transition: transform 0.3s ease-in-out;
+    
+   
 }
 
 .notification-container p{

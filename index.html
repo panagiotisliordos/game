@@ -21,16 +21,18 @@
             
 <li>Guess the hidden word by typing letters.</li>
 <li>You can only make 6 mistakes before you lose.</li>
-<li>All the words are connected with social problems</li>
+<li>All the words are connected with social problems!!!</li>
 <li>In case that you are lose ,start wondering about yourself!</li>
         </ul>
         <button id="start-button">Start Game</button>
+        <img src="./assets/rope.png" alt="" srcset="">
       
     </div>
 
     <div id="game-screen"  style="display: none;" >
         <h1>  No place for no respect!!</h1>
         <p class="still"> Are you still wondering???</p>
+
        
         <div class="game-container">
             <!--SVG code defines the appearance of the hangman figure .
@@ -48,13 +50,14 @@
                 <line x1="140" y1="90" x2="140" y2="150" class="figure-part" />
                 <!-- Arms -->
                 <line x1="140" y1="120" x2="120" y2="100" class="figure-part" />
-                <line x1="140" y1="120" x2="160" y2="100" class="figure-part" />
+                <line x1="140" y1="120" x2="180" y2="100" class="figure-part" />
                 <!-- Legs -->
                 <line x1="140" y1="150" x2="120" y2="180" class="figure-part" />
                 <line x1="140" y1="150" x2="180" y2="180" class="figure-part" />
             </svg>
             <div class="wrong-letters-container">
-                <img src="./assets/man-with-a-light-lamp.png" alt="">
+               
+        <img src="./assets/man-with-a-light-lamp.png" alt="">
                 <div id="wrong-letters"></div>
             </div>
             <div class="word" id="word"></div>
@@ -66,13 +69,12 @@
                 <button id="play-button">Play Again</button>
             </div>
         </div>
-
-        <!-- Notification -->
-        <div class="notification-container" id="notification-container">
-            <p class="hey">Hey, not again that letter!!!!</p>
+            <!-- Notification -->
+            <div class="notification-container" id="notification-container">
+                <p class="hey">Hey, not again that letter!!!!</p>
+            </div>
         </div>
-    </div>
-
+    
 
     <script src="./src/script.js"></script>
 </body>

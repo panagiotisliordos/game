@@ -14,7 +14,7 @@ const words = [
   "racism",
   "omophobia",
   "gentrification",
-  "povetry",
+  "poverty",
   "corruption",
 ];
 
@@ -29,6 +29,7 @@ const gameScreen = document.getElementById("game-screen");
 const wrongSound = new Audio('./assets/evil-shreik-45560.mp3');
 const bgMusic = document.getElementById("bg-music");
 bgMusic.volume=0.1
+
 function playMusic() {
 
   bgMusic.play();
@@ -98,10 +99,10 @@ function updateWrongLetterE1() {
   if (wrongLetters.length === figureParts.length) {
     finalMessage.innerText = "Try a little bit harder. ";
     popup.style.display = "flex";
+   
   }
   else {
     // Play wrong letter sound effect
-    
     wrongSound.play();
 }
 }
@@ -144,6 +145,7 @@ window.addEventListener("keydown", (e) => {
         //If the letter is already in the wrongLetters array, the showNotification() function is called
         showNotification();
       }
+      
     }
   }
 });
