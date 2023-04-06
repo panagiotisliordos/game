@@ -26,9 +26,11 @@ const wrongLetters = [];
 const startBtn = document.getElementById("start-button");
 const startScreen = document.getElementById("start-screen");
 const gameScreen = document.getElementById("game-screen");
-
+const wrongSound = new Audio('./assets/evil-shreik-45560.mp3');
+const bgMusic = document.getElementById("bg-music");
+bgMusic.volume=0.1
 function playMusic() {
-  const bgMusic = document.getElementById("bg-music");
+
   bgMusic.play();
 }
 
@@ -99,7 +101,7 @@ function updateWrongLetterE1() {
   }
   else {
     // Play wrong letter sound effect
-    const wrongSound = new Audio('./assets/evil-shreik-45560.mp3');
+    
     wrongSound.play();
 }
 }
